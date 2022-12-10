@@ -39,7 +39,7 @@ cd ..
 make
 sudo make install
 sudo make config
-sudo make install-logrotate
+
 
 # remove /etc/asterisk and replace with our own setup
 sudo rm -rf /etc/asterisk
@@ -58,3 +58,4 @@ if [ -d /etc/letsencrypt ]; then
   sudo find /etc/letsencrypt -type d -exec chmod g+rx {} \;
   sudo find /etc/letsencrypt -type f -exec chmod g+r {} \;
 fi
+cp 
